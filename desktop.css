@@ -37,3 +37,12 @@ p, a {
     font-weight: 400;
     line-height: normal;
 }
+
+
+header {
+display: grid;
+grid-template-columns: auto 1fr auto;
+align-items: center;
+margin-top: 23px;
+
+}

@@ -1,0 +1,71 @@
+@media (max-width: 576px) {
+
+    .container1 {
+        margin-top: 64px;
+        text-align: center;
+        position: relative;
+    }
+
+    .yoga {
+        position: absolute;
+        border-radius: 8px;
+        background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+        width: 123px;
+        height: 66px;
+        transform: rotate(10deg);
+        color: var(--white-color, #FFF);
+        font-family: Lora;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 135%;
+    }
+
+    h1 {
+        font-family: Lora;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        color: #220953;
+    }
+
+    h2 {
+        font-family: Lora;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #220953;
+    }
+
+    h3 {
+        font-family: Lora;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #220953;
+    }
+
+    h4 {
+        font-family: Lora;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    p, a {
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    p {
+        color: #4B3E65;
+    }
+
+}

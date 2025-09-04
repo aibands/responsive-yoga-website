@@ -6,14 +6,23 @@
     text-decoration: none;
 }
 
-/* for light mode */
 body {
-    background-color: #F5F0FF;
+    background-color: var(--light-background-color)
 }
 
-/* for dark mode */
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #14092A;
-  }
+:root {
+  /* light mode */
+  --light-background-color: #F5F0FF;
+  --light-title-color: #220953;
+  --light-body-color: #4B3E65;
+  --light-text-color-light: #A197B4;
+  --light-footer-color: #1E0849;
+  --light-container: #E5D9FD;
+  --white-color: #ffffff;
+  --gradient-color: linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%);
+  /* dark mode */
+  --dark-background-color: #14092A;
+  --dark-title-color: #D1C0F1;
+  --dark-body-color: #A094B8;
+  --dark-container: #372A51;
 }

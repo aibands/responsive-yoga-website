@@ -34,7 +34,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: 130%;
-        color: #220953;
+        color: var(--light-title-color);
     }
 
     h2 {
@@ -43,7 +43,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        color: #220953;
+        color: var(--light-title-color);
     }
 
     h3 {
@@ -52,7 +52,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        color: #220953;
+        color: var(--light-title-color);
     }
 
     h4 {
@@ -73,18 +73,366 @@
     }
 
     p {
-        color: #4B3E65;
+        color: var(--light-body-color);
     }
+
+    a {
+        color: var(--light-title-color)
+    }
+
+    #colorful {
+        background: var(--gradient-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    main {
+        padding-top: 56px;  
+    }
+
+    /* header */
+    header {
+        height: 56px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 24px;
+        position: fixed;
+        background-color: var(--light-background-color);
+        z-index: 2;
+    }
+
+    header img {
+        height: 24px;
+    }
+    
+    nav ul {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    /* drop down header */
+
+    .mobile {
+        display: flex;
+    }
+
+    .mobile-icons {
+        display: flex;
+    }
+
+    .mobile img {
+        margin-left: 20px;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #app {
+        cursor: pointer;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.30);
+        backdrop-filter: blur(16px);
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        padding-top: 72px;
+        padding-left: 48px;
+        flex-direction: column;
+        transform: translateY(-100%);
+        transition: transform 0.4s ease;
+        z-index: 1000;
+    }
+    
+    #menu-toggle:checked ~ .overlay {
+        transform: translateY(0);
+    }
+
+    .overlay ul li {
+        margin: 20px;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        cursor: pointer;
+}
+
+/* for dark mode */
+
+    .darkmode-mobile #dark-toggle-mobile {
+        display: none; 
+    }
+
+    .darkmode-mobile .toggle-label {
+        cursor: pointer;
+    }
+
+    .darkmode-mobile .toggle-label img {
+    transition: transform 0.3s;
+    }
+
+    .darkmode-mobile #dark-toggle-mobile:checked + .toggle-label img {
+    content: url('./asset/sun.svg'); 
+    transform: rotate(360deg);
+    }   
+
+    body:has(.darkmode-mobile #dark-toggle-mobile:checked) {
+    --light-background-color: var(--dark-background-color);
+    --light-title-color: var(--dark-title-color);
+    --light-body-color: var(--dark-body-color);
+    --light-container: var(--light-container);
+    }
+
+    /* container1 hero section*/
+
+    .container1 {
+        text-align: center;
+        position: relative;
+        padding: 30px;
+    }
+
+    .container1-text {
+        margin-top: 20px;
+    }
+
+    .yoga {
+        top: 100px;
+        left: 220px;
+    }
+
+    #star {
+        position: absolute;
+        z-index: 1;
+        width: 52px;
+        top: 150px;
+        left: 40px;
+    }
+
+    #circle {
+        position: absolute;
+        top: 290px;
+        right: 100px;
+        width: 16px;
+    }
+
+    button[type="colorful-button"] {
+        margin-top: 24px;
+        padding: 16px 28px;
+        align-items: center;
+        border-radius: 64px;
+        background: var(--gradient-color);
+        border: none;
+        color: var(--white-color);
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .number {
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    #container1-img {
+        margin-top: 32px;
+        width: 320px;
+    }
+
+    /* container2 #01 */
+
+    .container2 {
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+        position: relative;
+    }
+
+    .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .container2 .top img {
+        width: 230px;
+    }
+
+    .container2 p {
+        margin-top: 40px;
+    }
+
+    #blink {
+        width: 50px;
+        position: absolute;
+        z-index: 1;
+        top: 165px;
+        left: 24px;
+    }
+
+    #linkcircle {
+        position: absolute;
+        top: 280px;
+    }
+
+    .container2 a {
+        margin-top: 50px;
+    }
+
+    /* container3 Bring Happiness To Good Health! */
+
+    .container3 {
+        margin-top: 56px;
+        padding: 22px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 32px;
+        text-align: center;
+        position: relative;
+    }    
+
+    .container3 .rightbox p {
+        margin-top: 24px;
+    }
+
+    .container3 .leftbox {
+        text-align: left;
+    }
+
+    #guy {
+        width: 320px;
+    }
+
+    #heartrate {
+        display: flex;
+        width: fit-content;
+        background-color: var(--white-color);
+        padding: 8px 12px;
+        gap: 8px;
+        border-radius: 12px;
+        position: absolute;
+        top: 366px;
+        left: 30px;
+    }
+
+    #heartrate img {
+        width: 36px;
+    }
+
+    #freecourse {
+        background-color: var(--white-color);
+        padding: 8px 12px;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        border-radius: 12px;
+        position: absolute;
+        bottom: 64px;
+        right: 36px
+    }
+
+    /* container4 Anytime, Any Place, Any Workout */
+
+    .container4 {
+        margin-top: 48px;
+        padding: 24px;
+        position: relative;
+        text-align: center;
+    }
+
+    .container4 .leftbox p {
+        margin-top: 24px;
+    }
+
+    .container4 .rightbox img {
+        width: 250px;
+    }
+
+    #stretching1 {
+        position: absolute;
+        z-index: 1;
+        top: 300px;
+        left: 38px;
+        border-radius: 192px;
+        border: 10px solid var(--light-background-color);
+        background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    }
+
+    #stretching2 {
+        position: absolute;
+        z-index: 0;
+        right: 38px;
+        top: 430px;
+    }
+
+    #video {
+        position: absolute;
+        right: 24px;
+        top: 320px;
+        z-index: 1;
+        background-color: var(--white-color);
+        padding: 12px 8px;
+        display: flex;
+        width: fit-content;
+        align-items: center;
+        gap: 8px; 
+        border-radius: 12px; 
+    }
+
+    #Professional-Trainer {
+        background-color: var(--white-color);
+        position: absolute;
+        z-index: 1;
+        left: 40px;
+        top: 520px;
+        padding: 12px 8px;
+        border-radius: 12px;
+        display: flex;
+        gap: 8px; 
+        width: fit-content;
+        align-items: center;
+    }
+
+    
+    /* container5 */
 
     .container5 {
-        margin-top: 140px;
+        margin-top: 150px;
         text-align: center;
-        width: auto;
-        margin: 5rem 1rem;
-
+        position: relative;
     }
 
-    .container5 .topbox {
+    #yoga1, #yoga2 {
+        width: 140px;
+    }
+
+    #yoga3, #yoga4 {
+        width: 230px;
+    }
+    
+     .container5 .topbox {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -124,10 +472,8 @@
         border: 10px solid var(--first-color-light, #E5D9FD);
         border-radius: 192px;
         overflow: hidden;
-
     }
-
-    .photo-wrapper2 img {
+      .photo-wrapper2 img {
         display: block;
         width: 100%;
         height: auto;
@@ -180,17 +526,9 @@
         margin-top: 32px;
         padding: 16px 16px;
         align-items: center;
-        background: var(--gradient-color);
-        border: none;
-        color: var(--white-color);
-        font-family: Poppins;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-    }
-
-    .container6 {
+     
+      
+     .container6 {
         background: var(--gradient-color);
         border-radius: 32px;
         display: flex;
@@ -223,8 +561,7 @@
         margin-bottom: 2rem;
     }
 
-
-    .container6 .Subscribe input[type="email"] {
+      .container6 .Subscribe input[type="email"] {
         align-items: left;
         border: none;
         padding: 2rem 2rem;

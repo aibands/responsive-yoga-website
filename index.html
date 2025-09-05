@@ -16,16 +16,58 @@
 
 <body>
     <header>
-        <img src="./asset/Logo.svg" alt="logo">
+        <a href="#"><img src="./asset/Logo.svg" alt="logo"> </a>
+
         <nav class="menu">
             <ul>
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>Services 1</li></a>
-                <a href="#"><li>Services 2</li></a>
-                <a href="#"><li>Contact</li></a>
-                <img src="./asset/moon.svg" alt="moon">
+                <li><a href="#">Home</a></li>
+                <li>
+                <a href="">Services 1</a> <!-- dropdown -->
+                    <ul>
+                        <li><a href="">option1</a></li>
+                        <li><a href="">option2</a></li>
+                        <li><a href="">option3</a></li>
+                        <li><a href="">option4</a></li>
+                        <li><a href="">option5</a></li>
+                    </ul>
+                </li>
+                <li>
+                <a href="">Services 2</a> <!-- dropdown -->
+                    <ul>
+                        <li><a href="">option1</a></li>
+                        <li><a href="">option2</a></li>
+                        <li><a href="">option3</a></li>
+                        <li><a href="">option4</a></li>
+                        <li><a href="">option5</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Contact</a></li>
+                <li>
+                    <input type="checkbox" id="dark-toggle">
+                    <label for="dark-toggle" class="toggle-label"><img src="./asset/moon.svg" alt="moon" id="moon-desktop"></label>
+                </li>
             </ul>
         </nav>
+
+            <!-- mobile -->
+        <div class="mobile">
+            <div class="darkmode-mobile">
+                <input type="checkbox" id="dark-toggle-mobile">
+                <label for="dark-toggle-mobile" class="toggle-label"><img src="./asset/moon.svg" alt="moon" id="moon-mobile"></label>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle"><img src="./asset/app.svg" alt="app" id="app"></label>
+
+            <div class="overlay">
+                <label for="menu-toggle" class="close-btn">✕</label>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services 1</a></li>
+                    <li><a href="#">Services 2</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -33,7 +75,9 @@
             <div class="leftbox">
                 <h1>Choose Your<br> Best <br> Teacher</h1>
                 <div class="yoga">Yoga</div>
-                <p>Calm your mind and body with the best yoga <br>teachers available, relax your day and stay positive.</p>
+                <div class="container1-text">
+                    <p>Calm your mind and body with the best yoga teachers available, relax your day and stay positive.</p>
+                </div>
                 <button type="colorful-button">Get Started Free &rarr;</button>
                 <img src="./asset/home-circle.svg" alt="circle" id="circle">
                 <img src="./asset/home-star.svg" alt="star" id="star">
@@ -54,8 +98,10 @@
         </div>
 
         <div class="container2">  <!-- #01 -->
-            <h3>#01</h3>
-            <img src="./asset/List box.png" alt="a girl do yoga">
+            <div class="top">
+                <h3>#01</h3>
+                <img src="./asset/List box.png" alt="a girl do yoga">
+            </div>
             <img src="./asset/blink.svg" alt="blink" id="blink">
             <p>Get a list of specific influencers in your <br> niche at your fingertips so you can focus <br> on managing your status.</p>
             <a href="#" id="colorful">Next &rarr;</a>
@@ -64,7 +110,7 @@
 
         <div class="container3">  <!-- Bring Happiness To Good Health! -->
             <div class="leftbox">
-                <img src="./asset/health-fitness.png" alt="a guy do yoga">
+                <img src="./asset/health-fitness.png" alt="a guy do yoga" id="guy">
                 <div id="heartrate">
                     <img src="./asset/heart.svg" alt="heart">
                     <div class="heartratetext">
@@ -79,15 +125,15 @@
             </div>
             <div class="rightbox">
                 <h3>Bring Happiness To Good Health!</h3>
-                <p>If you take care of your good health, take care of your mentality and <br> lead a healthy life with positive thoughts every day.</p>
+                <p>If you take care of your good health, take care of your mentality and lead a healthy life with positive thoughts every day.</p>
                 <button type="colorful-button">Let’s Start &rarr;</button>
             </div>
         </div>
 
         <div class="container4"> <!-- Anytime, Any Place, Any Workout -->
             <div class="leftbox">
-                <h3>Anytime, Any <br>Place, Any <br>Workout</h3>
-                <p style="margin-top: 40px;">Take your routine at any time of your day, with the new <br>videos and with the teachers who will guide
+                <h3>Anytime, Any Place, Any Workout</h3>
+                <p>Take your routine at any time of your day, with the new videos and with the teachers who will guide
                     you.</p>
                 <button type="colorful-button">Get Started Free &rarr;</button>
             </div>

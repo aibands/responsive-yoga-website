@@ -1,4 +1,4 @@
-@media (min-width: 992px) {
+@media screen and (min-width: 767px) {
    
 
     h1 {
@@ -58,29 +58,108 @@
         -webkit-text-fill-color: transparent;
     }
 
+    main {
+        padding-top: 77px;  
+    }
+
 /* Header nav */
     header {
         height: 77px;
         width: 100%;
         display: flex;
         justify-content: space-around;
+        gap: 300px;
         padding: 24px;
         position: fixed;
         background-color: var(--light-background-color);
         z-index: 1;
     }
 
-    header img {
+    header img { 
         height: 24px;
     }
 
-    nav ul {
+    nav.menu > ul {
         display: flex;
-        gap: 72px;
+        gap: 32px;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    nav ul li {
+      position: relative; 
+    }
+
+    .mobile {
+        display: none;
+    }
+
+/* LHVA */
+
+    nav ul li a:link, nav ul li a:visited {
+        color: var(--light-title-color);
+    }
+
+    nav ul li a:hover {
+        background: var(--gradient-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+/* drop down header */
+
+    nav ul li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 2;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    nav ul li ul li {
+        padding: 10px;
+        color: var(--light-title-color);
+        background: var(--light-background-color);
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
     
-    main {
-    padding-top: 77px;  
+    nav ul li:hover > ul {
+        display: block;
+        opacity: 1;
+    }   
+
+/* for dark mode */
+
+    #dark-toggle {
+        display: none; 
+    }
+
+    .toggle-label {
+        cursor: pointer;
+    }
+
+    .toggle-label img {
+    transition: transform 0.3s;
+    }
+
+    #dark-toggle:checked + .toggle-label img {
+    content: url('./asset/sun.svg'); 
+    transform: rotate(360deg);
+    }   
+
+    body:has(#dark-toggle:checked) {
+    --light-background-color: var(--dark-background-color);
+    --light-title-color: var(--dark-title-color);
+    --light-body-color: var(--dark-body-color);
+    --light-container: var(--light-container);
     }
 
 /* hero section */
@@ -94,6 +173,10 @@
         margin-left: 140px;
         text-align: left;
         position: relative;
+    }
+
+    .container1-text {
+        width: 417px;
     }
 
     .yoga {
@@ -158,15 +241,22 @@
         padding: 48px;
     }
 
+    .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
     #blink {
         position: absolute;
-        right: 560px;
+        right: 600px;
         top: 85px;
     }
 
     #linkcircle {
         position: absolute;
-        right: 55px;
+        right: 70px;
     }
 
 /* Bring Happiness To Good Health!  */
@@ -182,6 +272,7 @@
 
     .container3 .rightbox p {
         margin-top: 40px;
+        width: 550px;
     }
 
     #heartrate {
@@ -222,12 +313,21 @@
         position: relative;
     }
 
+    .container4 .leftbox h3 {
+        width: 500px;
+    }
+
+    .container4 .leftbox p {
+        margin-top: 40px;
+        width: 480px;
+    }
+
     #stretching1 {
         position: absolute;
         z-index: 1;
         top: -77px;
         border-radius: 192px;
-        border: 10px solid var(--body-color, #F5F0FF);
+        border: 10px solid var(--light-background-color);
         background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     }
 
@@ -287,16 +387,16 @@
 
     .photo-wrapper1, .photo-wrapper2 {
         border-radius: 192px;
-        border: 10px solid var(--first-color-light, #E5D9FD);
+        border: 10px solid var(--light-container);
         background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     }
 
     .photo-wrapper3 {
         display: inline-block;
-        border: 10px solid var(--first-color-light, #E5D9FD);
+        border: 10px solid var(--light-container);
         border-radius: 192px;      
         overflow: hidden;            
-        transform: rotate(15deg);             
+        transform: rotate(15deg);
     }
 
     .photo-wrapper3 img {
@@ -453,5 +553,4 @@
         display: flex;
         justify-content: space-between;
     }
-
 } 

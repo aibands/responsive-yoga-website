@@ -366,7 +366,7 @@
     .container6 .Subscribe {
     display: flex;
     background-color: var(--white-color);
-    border-radius: 2rem;
+    border-radius: 5rem;
     padding: 0.5rem;
     max-width: 40rem;
     margin: 0 auto;
@@ -378,7 +378,7 @@
     align-items: left;
     border: none;
     padding: 1.2rem 1.5rem;
-    border-radius: 2rem;
+    border-radius: 5rem;
     font-size: 1rem;
     color: var(--light-text-color-light);
     }

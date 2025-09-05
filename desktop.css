@@ -1,4 +1,4 @@
-@media (min-width: 992px) {
+@media screen and (min-width: 768px) {
    
 
     h1 {
@@ -347,12 +347,11 @@
     color: var(--white-color);
     }
 
-    .container6 h2 {
-      color: var(--white-color);
-    }
+   
     .container6 h2 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
+    color: var(--white-color)
     }
 
     .container6 p {

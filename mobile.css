@@ -169,7 +169,7 @@
         top: 20px;
         right: 25px;
         cursor: pointer;
-}
+    }
 
 /* for dark mode */
 
@@ -526,7 +526,7 @@
         margin-top: 32px;
         padding: 16px 16px;
         align-items: center;
-     
+    }
       
      .container6 {
         background: var(--gradient-color);

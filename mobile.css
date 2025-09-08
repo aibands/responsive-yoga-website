@@ -421,7 +421,7 @@
     .photo-wrapper1 {
         display: block;
         grid-area: one;
-        border: 10px solid var(--first-color-light, #E5D9FD);
+        border: 10px solid var(--light-container);
         border-radius: 192px;
         overflow: hidden;
 
@@ -446,7 +446,7 @@
         position: relative;
         top: 5rem;
         width: 100%;
-        border: 10px solid var(--first-color-light, #E5D9FD);
+        border: 10px solid var(--light-container);
         border-radius: 192px;
         overflow: hidden;
 
@@ -470,7 +470,7 @@
     .photo-wrapper3 {
         width: 80%;
         display: inline-block;
-        border: 10px solid var(--first-color-light, #E5D9FD);
+        border: 10px solid var(--light-container);
         border-radius: 192px;
         overflow: hidden;
         transform: rotate(15deg);

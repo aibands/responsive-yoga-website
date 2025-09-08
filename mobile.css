@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     h1 {
         font-family: Lora;
         font-size: 44px;
@@ -353,12 +353,60 @@
         width: 250px;
     }
 
+    #stretching1 {
+        position: absolute;
+        z-index: 1;
+        top: 300px;
+        left: 38px;
+        border-radius: 192px;
+        border: 10px solid var(--light-background-color);
+        background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    }
+
+    #stretching2 {
+        position: absolute;
+        z-index: 0;
+        right: 38px;
+        top: 430px;
+    }
+
+    #video {
+        position: absolute;
+        right: 24px;
+        top: 320px;
+        z-index: 1;
+        background-color: var(--white-color);
+        padding: 12px 8px;
+        display: flex;
+        width: fit-content;
+        align-items: center;
+        gap: 8px; 
+        border-radius: 12px; 
+    }
+
+    #Professional-Trainer {
+        background-color: var(--white-color);
+        position: absolute;
+        z-index: 1;
+        left: 40px;
+        top: 520px;
+        padding: 12px 8px;
+        border-radius: 12px;
+        display: flex;
+        gap: 8px; 
+        width: fit-content;
+        align-items: center;
+    }
+
+
+    /* container 5 */
     .container5 {
         margin-top: 140px;
         text-align: center;
         width: auto;
         margin: 5rem 1rem;
-
+        position: relative;
+        top: 300px;
     }
 
     .container5 .topbox {
@@ -467,7 +515,11 @@
         line-height: normal;
     }
 
+    /* container6 */
+
     .container6 {
+        position: relative;
+        top: 300px;
         background: var(--gradient-color);
         border-radius: 32px;
         display: flex;
@@ -525,7 +577,10 @@
         line-height: normal;
     }
 
+/* footer */
     footer {
+        position: relative;
+        top: 300px;
         background-color: var(--light-footer-color);
         padding: 0 2rem;
         padding-bottom: 32px;
